@@ -21,9 +21,7 @@ rgba(91, 109, 248, 0.15) 100%;
     position: relative;
 
     .c-monitor-banner-content {
-        align-items: center;
-        display: flex;
-        justify-content: flex-start;
+        text-align: center;
         padding: $spacing-md;
 
         .c-monitor-banner-logo {
@@ -32,14 +30,35 @@ rgba(91, 109, 248, 0.15) 100%;
             max-width: 120px;
         }
 
-        .monitor-banner-text {
-            display: flex;
-            flex-direction: column;
-            margin-left: $spacing-xl;
-            margin-right: $spacing-xl;
-            max-width: 200px;
+        h2 {
+            @include font-base;
+            @include font-size(22px);
+            margin: 0 0 $spacing-md;
 
-            @media #{$mq-sm} {
+            span {
+                color: #C60184;
+            }
+        }
+
+        .c-cta {
+            margin: 0;
+        }
+
+        .mzp-c-button {
+            white-space: nowrap;
+        }
+
+        @media #{$mq-sm} {
+            align-items: center;
+            display: flex;
+            justify-content: flex-start;
+            text-align: start;
+
+            .monitor-banner-text {
+                display: flex;
+                flex-direction: column;
+                margin-left: $spacing-xl;
+                margin-right: $spacing-xl;
                 max-width: none;
 
                 h2{
@@ -50,30 +69,11 @@ rgba(91, 109, 248, 0.15) 100%;
                     }
                 }
             }
-        }
 
-        h2 {
-            @include font-base;
-            @include font-size(22px);
-            margin: 0 0 $spacing-md;
-
-            br {
-                display: none;
+            .c-cta {
+                display: flex;
+                align-self: middle;
             }
-
-            span {
-                color: #C60184;
-            }
-        }
-
-        .c-cta {
-            display: flex;
-            align-self: middle;
-            margin: 0;
-        }
-
-        .mzp-c-button {
-            white-space: nowrap;
         }
 
         @media #{$mq-md} {
