@@ -393,9 +393,16 @@
         can look like — balancing your life with the connection and community
         essential to the products we’re building.</p>
 
-      <div class="mzp-c-video">
-        <iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/_EeFDE5WW0I" title="Watch Mozillians, kids, and pets on Zoom" frameborder="0" allowfullscreen>
-        </iframe>
+      <div class="c-mozillians-video">
+        <a class="video-play js-video-play" href="https://youtu.be/_EeFDE5WW0I" title="Watch Mozillians, kids, and pets on Zoom">
+          <img src="{{ static('img/careers/mozillians-video-thumb.jpg') }}" alt="" width="684" height="384">
+        </a>
+
+        <div class="mzp-u-modal-content hidden">
+          <div class="js-video-content mzp-c-video">
+            <div class="video-player" data-video-id="_EeFDE5WW0I" data-video-title="Watch Mozillians, kids, and pets on Zoom"></div>
+          </div>
+        </div>
       </div>
 
       <p class="c-careers-button-wrapper">
@@ -411,6 +418,6 @@
 
 {% block js %}
   {{ js_bundle('protocol-modal') }}
-  {{ js_bundle('careers-hero-video') }}
+  {{ js_bundle('youtube-video-modal') }}
   {{ js_bundle('careers-testimonials') }}
 {% endblock %}

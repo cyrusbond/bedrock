@@ -32,7 +32,7 @@
         <source src="https://assets.mozilla.net/video/red-pandas.webm" type="video/webm">
       </video>
     {% else %}
-      <a class="video-play js-video-play" href="https://youtu.be/F-nFQryDB0s" data-id="F-nFQryDB0s" data-video-title="Red Panda Cubs - Firefox + Woodland Park Zoo" title="{{ ftl('features-pip-play-the-video') }}">
+      <a class="video-play js-video-play" href="https://youtu.be/F-nFQryDB0s" data-video-id="F-nFQryDB0s" data-video-title="Red Panda Cubs - Firefox + Woodland Park Zoo" title="{{ ftl('features-pip-play-the-video') }}">
         <img src="{{ static('img/firefox/features/pip/video-poster.jpg') }}" alt="" width="1024" height="576">
       </a>
     {% endif %}
@@ -90,5 +90,5 @@
 
 {% block js %}
   {{ super() }}
-  {{ js_bundle('firefox-features-pip') }}
+  {{ js_bundle('youtube-video-inline') }}
 {% endblock %}

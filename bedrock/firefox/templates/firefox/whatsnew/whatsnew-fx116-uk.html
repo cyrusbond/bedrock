@@ -22,7 +22,7 @@
 <section class="wnp-content-main">
   <div class="mzp-l-content mzp-t-content-md mzp-t-content-nospace">
     <div class="mzp-c-video">
-      <a class="video-play js-video-play" href="https://youtu.be/QD9wwba2lO0" data-id="QD9wwba2lO0" data-video-title="How Firefox keeps YOU safe & organized | #AskFirefox" title="Play the video">
+      <a class="video-play js-video-play" href="https://youtu.be/QD9wwba2lO0" data-video-id="QD9wwba2lO0" data-video-title="How Firefox keeps YOU safe & organized | #AskFirefox" title="Play the video">
         <img src="{{ static('img/firefox/whatsnew/whatsnew116-eu/video-thumbnail.jpg') }}" alt="" width="1024" height="576">
       </a>
     </div>
@@ -85,4 +85,5 @@
 
 {% block js %}
   {{ js_bundle('firefox_whatsnew_116_eu') }}
+  {{ js_bundle('youtube-video-inline') }}
 {% endblock %}

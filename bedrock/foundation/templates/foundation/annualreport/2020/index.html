@@ -49,8 +49,9 @@
       us or to <a href="https://donate.mozilla.org/">make a donation</a> to support the work of internet health leaders around the world.</p>
 
     <div class="mzp-c-video">
-      <iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/ISYtFzMXVbM" title="Watch Mozilla: The big picture" frameborder="0" allowfullscreen>
-      </iframe>
+      <a class="video-play js-video-play" href="https://youtu.be/ISYtFzMXVbM" data-video-id="ISYtFzMXVbM" data-video-title="Watch Mozilla: The big picture" title="Play the video">
+        <img src="{{ static('img/foundation/annualreport/2020/som-video-thumbnail.png') }}" alt="" width="928" height="522">
+      </a>
     </div>
   </div>
 
@@ -1292,5 +1293,6 @@
 {% endblock %}
 
 {% block js %}
+  {{ js_bundle('youtube-video-inline') }}
   {{ js_bundle('annual_report_modal') }}
 {% endblock %}

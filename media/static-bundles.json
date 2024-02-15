@@ -1498,12 +1498,6 @@
     },
     {
       "files": [
-        "js/firefox/features/tips/tips-youtube.js"
-      ],
-      "name": "firefox_tips"
-    },
-    {
-      "files": [
         "js/firefox/features/features-article.es6.js"
       ],
       "name": "firefox_features_article"
@@ -1792,12 +1786,6 @@
     },
     {
       "files": [
-        "js/firefox/features/picture-in-picture.js"
-      ],
-      "name": "firefox-features-pip"
-    },
-    {
-      "files": [
         "js/mozorg/manifesto.js"
       ],
       "name": "manifesto"
@@ -2018,9 +2006,15 @@
     },
     {
       "files": [
-        "js/careers/hero-video.js"
+        "js/base/youtube-video-inline.es6.js"
       ],
-      "name": "careers-hero-video"
+      "name": "youtube-video-inline"
+    },
+    {
+      "files": [
+        "js/base/youtube-video-modal.es6.js"
+      ],
+      "name": "youtube-video-modal"
     },
     {
       "files": [
@@ -2083,12 +2077,6 @@
         "js/products/mozsocial/invite.es6.js"
       ],
       "name": "mozsocial-waitlist"
-    },
-    {
-      "files": [
-        "js/mozorg/try-picture-in-picture.js"
-      ],
-      "name": "try-picture-in-picture"
     },
     {
       "files": [

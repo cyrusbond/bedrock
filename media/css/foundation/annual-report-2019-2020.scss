@@ -9,6 +9,7 @@ $image-path: '/media/protocol/img';
 @import '~@mozilla-protocol/core/protocol/css/components/feature-card';
 @import '~@mozilla-protocol/core/protocol/css/components/modal';
 @import '~@mozilla-protocol/core/protocol/css/components/video';
+@import '../protocol/components/video-thumbnail';
 
 // * -------------------------------------------------------------------------- */
 // Hero image & banner heading
@@ -372,6 +373,10 @@ $image-path: '/media/protocol/img';
                 color: var(--link-color-hover);
             }
         }
+    }
+
+    .video-play {
+        position: static;
     }
 
     .mzp-c-card-feature-content-container {

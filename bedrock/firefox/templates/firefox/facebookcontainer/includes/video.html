@@ -5,11 +5,16 @@
 #}
 
 {% if LANG == 'de' %}
-<div class="mzp-c-video">
-    <iframe src="https://www.youtube-nocookie.com/embed/7yLoRVwuZlc?rel=0&amp;showinfo=0" frameborder="0"
-    title="Falls du noch mehr über die Facebook Container Erweiterung erfahren möchtest, schau dir gern unser Video an"
-      allow="encrypted-media" allowfullscreen>
-  </iframe>
+<div class="c-hero-video">
+  <a class="video-play js-video-play" href="https://youtu.be/7yLoRVwuZlc" title="Falls du noch mehr über die Facebook Container Erweiterung erfahren möchtest, schau dir gern unser Video an">
+    <img src="{{ static('img/firefox/facebook-container/video-poster.png') }}" alt="" width="1200" height="686">
+  </a>
+
+  <div class="mzp-u-modal-content hidden">
+    <div class="js-video-content mzp-c-video">
+      <div class="video-player" data-video-id="7yLoRVwuZlc" data-video-title="Falls du noch mehr über die Facebook Container Erweiterung erfahren möchtest, schau dir gern unser Video an"></div>
+    </div>
+  </div>
 </div>
 {% else %}
 <div class="mzp-c-video">

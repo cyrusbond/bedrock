@@ -12,6 +12,7 @@ $image-path: '/media/protocol/img';
 @import '~@mozilla-protocol/core/protocol/css/components/zap';
 @import '~@mozilla-protocol/core/protocol/css/components/logos/logo';
 @import '~@mozilla-protocol/core/protocol/css/components/logos/logo-product-mozilla';
+@import '../../protocol/components/video-thumbnail';
 
 // Play button on videos
 .mzp-c-card-media-wrapper {

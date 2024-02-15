@@ -23,7 +23,7 @@
 <section class="wnp-content-main">
   <div class="mzp-l-content mzp-t-content-md mzp-t-content-nospace">
     <div class="mzp-c-video">
-      <a class="video-play js-video-play" href="https://youtu.be/_obdx3VUzuQ" data-id="_obdx3VUzuQ" data-video-title="Mozilla: The Big Picture" title="Video abspielen">
+      <a class="video-play js-video-play" href="https://youtu.be/_obdx3VUzuQ" data-video-id="_obdx3VUzuQ" data-video-title="Mozilla: The Big Picture" title="Video abspielen">
         <img src="{{ static('img/firefox/whatsnew/whatsnew116-eu/big-picture-thumbnail.png') }}" alt="" width="1024" height="576">
       </a>
     </div>
@@ -88,4 +88,5 @@
 
 {% block js %}
   {{ js_bundle('firefox_whatsnew_116_eu') }}
+  {{ js_bundle('youtube-video-inline') }}
 {% endblock %}

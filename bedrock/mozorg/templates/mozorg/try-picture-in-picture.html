@@ -29,7 +29,7 @@
 <section class="try-pip-content-main">
   <div class="mzp-l-content mzp-t-content-md mzp-t-content-nospace">
     <div class="mzp-c-video">
-      <a class="video-play js-video-play" href="https://youtu.be/{{ video_link }}" data-id="{{ video_link }}" data-video-title=" Must-have add-ons you’re missing out on | #AskFirefox" title="Play the video">
+      <a class="video-play js-video-play" href="https://youtu.be/{{ video_link }}" data-video-id="{{ video_link }}" data-video-title=" Must-have add-ons you’re missing out on | #AskFirefox" title="Play the video">
         <img src="{{ video_thumbnail }}" alt="" width="1024" height="576">
       </a>
     </div>
@@ -85,5 +85,5 @@
 {% endblock %}
 
 {% block js %}
-  {{ js_bundle('try-picture-in-picture') }}
+  {{ js_bundle('youtube-video-inline') }}
 {% endblock %}
